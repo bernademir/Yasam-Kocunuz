@@ -1,0 +1,156 @@
+.enbuyukdiv{
+    width:auto ;
+    height: auto;
+    border-radius: 20px;
+    background-image: url("resimler/siyak2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tanitim{
+    width: 1200px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 30px;
+}
+.tanitim2:nth-child(1){
+    width: 100px;
+    height: 100px;
+    background-image: url("resimler/sembol2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    float: left;
+    margin: 20px 20px 20px 40px;
+}
+.tanitim2:nth-child(2){
+    width: 900px;
+    height: 100px;
+    background-image: url("resimler/turuncu.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    float: left;
+    margin: 20px;
+}
+.tanitim2:nth-child(2) p{
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    display: block;
+    margin: 35px auto;
+}
+.baskisim{
+    border: 1px solid black;
+    width: auto;
+    height: 50px;
+    background-color: rgb(210,105,30); 
+    margin-bottom: 30px;
+    margin-left: 10px;
+    border-radius: 30px;
+    position: sticky;
+    top: 0;
+}
+.baskisim .menu{
+    width: auto;
+    background-color:rgb(210,105,30);  
+    height: 50px;
+    float: left;
+    border-radius:20px 0 0 20px;
+}
+.baskisim .menu li{
+    float: left;
+}
+.baskisim .menu ul{
+    list-style-type: none;
+}
+.baskisim .menu a{
+    display: block;
+    margin: auto 50px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+}
+.giris{
+    width: 100px;
+    height: 50px;
+    float: left;
+    background-color: chocolate;
+    border-radius:30px;
+}
+.giris:nth-child(2){
+    margin-left: 70px;
+}
+.giris a{
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: bolder;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 17px;
+    margin-left: 10px;
+}
+.menu a:hover{
+    display: block;
+    color: brown;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size:large;
+}
+.giris a:hover{
+    display: block;
+    color: brown;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size:large;
+    font-weight: bolder;
+}
+.logo{
+    width: 40px ;
+    height: 40px;
+    float: right;
+    margin:5px 10px;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+.son p{
+    color:white;
+    width: 160px;
+    height: 20px;
+    float: right;
+}
+.son{
+    width: 300px;
+    height: 500px;
+    clear: both;
+    width: 850px;
+    height: 60px;
+    margin: 30px auto;
+    border-radius: 30px;
+}
+.baslik{
+    width: 500px;
+    height: 100px;
+    background-color: rgb(255,165,79);
+    float:top;
+    height: 80px;
+    margin: 40px 20px 20px 400px;
+    border-radius: 30px;
+}
+.baslik p{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 40px;
+    color: rgb(139,69,19);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    display: block;
+    margin: 35px auto;
+}

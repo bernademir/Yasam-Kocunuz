@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Yasam Kocunuz</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="stil.css" />
+        <style>
+            .anabolum{
+                width: 500px;
+                height: 300px;
+                float: left;
+                margin-top: 100px;
+                margin-left:350px; 
+                border-radius: 30px;
+                background-color: white;
+                opacity: 0.5;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <div class="enbuyukdiv" style="background-image: url(resimler/dene17.jpg);">
+            <div class="tanitim">
+                <div class="tanitim2"></div>
+                <div class="tanitim2"><p style="color:black;">Dünyada Değişmesini İstediğiniz İlk Şey, Kendiniz Olmalıdır.</p></div>
+            </div>
+            <div class="baskisim">
+                <div class="menu">
+                    <ul>
+                        <li><a href="anasayfa.xhtml">ANASAYFA</a></li>
+                        <li><a href="beslenmeYonetimi.xhtml">Beslenme Yönetimi</a></li>
+                        <li><a href="sporYonetimi.xhtml">Spor Yönetimi</a></li>
+                        <li><a href="psikolojiYonetimi.xhtml">Psikoloji Yönetimi</a></li>
+                    </ul>
+                </div>
+                <div class="giris">
+                    <a href="index.xhtml">ÇIKIŞ YAP</a>
+                </div>
+            </div>
+            <div class="anabolum">
+
+                <h:form style="margin-left:30px;">
+                    <h:panelGrid columns="2">
+                        <h:outputText value="İsminiz:   " style="font-weight: bolder;color:red;font-family: fantasy;font-size: larger;"/>
+                        <h:outputText value="#{managedBeanClass.name}" style="font-weight: bolder;color:red;font-family: fantasy;font-size: larger;"/>
+                    </h:panelGrid>
+                    <h:panelGrid columns="2">
+                        <h:outputText value="Soyisminiz:   " style="font-weight: bolder;color:red;font-family: fantasy;font-size: larger;"/>
+                        <h:outputText value="#{managedBeanClass.surname}" style="font-weight: bolder;color:red;font-family: fantasy;font-size: larger;"/>
+                    </h:panelGrid>
+                    <h:panelGrid columns="2">
+                        <h:outputText value="Kullanici Adiniz:   " style="font-weight: bolder;color:red;font-family: fantasy;font-size: larger;"/>
+                        <h:outputText value="#{managedBeanClass.kullaniciAdi}" style="font-weight: bolder;color:red;font-family: fantasy;font-size: larger;"/> 
+                    </h:panelGrid>
+                    <h:panelGrid columns="2">
+                        <h:outputText value="Cinsiyet:   " style="font-weight: bolder;color:red;font-family: fantasy;font-size: larger;"/>
+                        <h:outputText value="#{managedBeanClass.cinsiyet}" style="font-weight: bolder;color:red;font-family: fantasy;font-size: larger;"/>
+                        <h:outputText value="Mail:   " style="font-weight: bolder;color:red;font-family: fantasy;font-size: larger;"/>
+                        <h:outputText value="#{managedBeanClass.mail}" style="font-weight: bolder;color:red;font-family: fantasy;font-size: larger;"/>
+
+                        <h:outputText value="Adres:   " style="font-weight: bolder;color:red;font-family: fantasy;font-size: larger;"/>
+                        <h:outputText value="#{managedBeanClass.adres}" style="font-weight: bolder;color:red;font-family: fantasy;font-size: larger;"/>   
+                    </h:panelGrid>        
+                </h:form>
+            </div>
+            <div class="son">
+                <div class="logo"><a href=""><img src="resimler/wp.jpg"></img></a></div>
+                <div class="logo"><a href=""><img src="resimler/insta.jpg"></img></a></div>
+                <div class="logo"><a href=""><img src="resimler/twit.jpg"></img></a></div>
+                <div class="logo"><a href=""><img src="resimler/mail.jpg"></img></a></div>
+                <p>İLETİŞİM:</p>
+            </div>
+        </div>
+    </h:body>
+</html>

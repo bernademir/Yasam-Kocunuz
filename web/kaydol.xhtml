@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Yasam Kocunuz</title>
+    </h:head>
+    <h:body style="background-image: url(resimler/giris1.jpg);">
+        <h:form style="border: 1px solid greenyellow;width: 380px;height: auto;padding: 40px;margin: 150px auto;background-color: darkolivegreen; border-radius: 40px;">
+            <h:panelGrid columns="2">
+                <h:outputText value="İsim:" style="font-weight: bolder;color:greenyellow;font-family: fantasy;font-size: larger;"/>
+                <h:inputText id="isim" value="#{managedBeanClass.name}" required="true" requiredMessage="isim alani zorunludur" style="margin-left:70px"/>
+                <h:message for="isim" style="color:red"/>
+            </h:panelGrid>
+            <h:panelGrid columns="2">   
+                <h:outputText value="Soyisim:" style="font-weight: bolder;color:greenyellow;font-family: fantasy;font-size: larger;"/>
+                <h:inputText id="soyisim" value="#{managedBeanClass.surname}" required="true" requiredMessage="soyisim alani zorunludur" style="margin-left: 52px" />  <!--buralardaki noktalar sınıf değişkenlerine erişmekm için-->
+                <h:message for="soyisim" style="color:red"/>
+            </h:panelGrid>
+            <h:panelGrid columns="2">
+                <h:outputText value="Kullanici Adi:" style="font-weight: bolder;color:greenyellow;font-family: fantasy;font-size: larger;"/>
+                <h:inputText id="kullaniciAdi" value="#{managedBeanClass.kullaniciAdi}" required="true" requiredMessage="Kullanıcı adı zorunludur" style="margin-left: 20px"/>  <!--buralardaki noktalar sınıf değişkenlerine erişmekm için-->
+                <h:message for="kullaniciAdi" style="color:red"/> 
+            </h:panelGrid>
+            <h:panelGrid columns="2">  
+                <h:outputText value="Cinsiyet:" style="font-weight: bolder;color:greenyellow;font-family: fantasy;font-size: larger;"/>
+                <h:selectManyCheckbox value="#{managedBeanClass.cinsiyet}" style="margin: auto auto auto 50px;font-weight: bold">
+                    <f:selectItem itemLabel="Erkek"  itemValue="Erkek"/>
+                    <f:selectItem itemLabel="Kadın" itemValue="Kadın"/>
+                </h:selectManyCheckbox>  
+                <h:outputText value="Mail:" style="font-weight: bolder;color:greenyellow;font-family: fantasy;font-size: larger;"/>
+                <h:inputText id="mail" value="#{managedBeanClass.mail}" required="true" requiredMessage="mail alani zorunludur" style="margin-left: 50px" />
+                <h:message for="mail" style="color:red"/>
+                <br></br>
+                <h:outputText value="Sifre:" style="font-weight: bolder;color:greenyellow;font-family: fantasy;font-size: larger;"/>
+                <h:inputSecret id="sifre" value="#{managedBeanClass.password}" required="true" requiredMessage="sifre alani zorunludur" style="margin-left: 50px" />
+                <h:message for="sifre" style="color:red"/>
+                <br></br>    
+                <h:outputText value="Adres:" style="font-weight: bolder;color:greenyellow;font-family: fantasy;font-size: larger;"/>
+                <h:inputTextarea value="#{managedBeanClass.adres}" style="margin: auto auto auto 50px;font-weight: bold"/>
+                <br></br>
+                <br></br>
+            </h:panelGrid>
+            <h:commandButton value="GONDER" action="#{managedBeanClass.yeniKayit()}" style="margin: auto auto auto 150px; color:red; font-weight: bolder;"/>     
+        </h:form>
+    </h:body>
+</html>

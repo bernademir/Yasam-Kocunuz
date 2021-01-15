@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Yasam Kocunuz</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+        <link rel="stylesheet" type="text/css" media="screen" href="stil.css" />
+        <style>
+            .anabolum{
+                width: 500px;
+                height: 300px;
+                float: left;
+                border-radius: 30px;
+                margin-left: 30px;
+                margin-right: 50px;
+            }
+            .anabolum p{
+                color:red;
+                font-size: xx-large;
+                font-weight: bolder;
+                font-family: fantasy;
+                text-align: center;
+            }
+            #slider-wrapper{
+                position: relative;
+                width:600px;
+                height:300px;
+                overflow: hidden;
+            }
+            .img-bir, .img-iki, .img-uc, .img-dort,.img-bes,.img-alti{
+                position: absolute;
+                width:600px;
+                height:300px;
+            }
+            .img-bir{left: 0px;}
+            .img-iki{left: 600px;}
+            .img-uc{left: 1200px;}
+            .img-dort{left: 1800px;}
+            .img-bes{left: 2400px;}
+            .img-alti{left: 3000px;}
+            #slider-wrapper > .slider{
+                position: absolute;
+                left:0px;
+                width: 3000px;
+                height: 300px;
+                -webkit-animation-duration: 15s;
+                -webkit-animation-name: slider;
+                -webkit-animation-iteration-count:infinite;
+                -moz-animation-duration: 15s;
+                -moz-animation-name: sliders;
+                -moz-animation-iteration-count:infinite;
+                -ms-animation-duration: 15s;
+                -ms-animation-name: sliders;
+                -ms-animation-iteration-count:infinite;
+                animation-duration: 15s;
+                animation-iteration-count:infinite;
+            }
+            #slider-wrapper > .slider:hover{
+                -webkit-animation-play-state:paused;
+            }
+            #slider-wrapper a{
+                font-size:18px;
+                font-family:Arial;
+            }
+            @-webkit-keyframes sliders{
+                0% {left:0px;}
+                10% {left:0px;}
+                20% {left:-700px;}
+                30% {left:-700px;}
+                40% {left:-1400px;}
+                50% {left:-1400px;}
+                60% {left:-2100px;}
+                70% {left:-2100px;}
+                80% {left:-2800px;}
+                90% {left:-2800px;}
+            }
+            @-moz-keyframes sliders{
+                0% {left:0px;}
+                10% {left:0px;}
+                20% {left:-600px;}
+                30% {left:-600px;}
+                40% {left:-1200px;}
+                50% {left:-1200px;}
+                60% {left:-1800px;}
+                70% {left:-1800px;}
+                80% {left:-2400px;}
+                90% {left:-2400px;}
+            }
+            @-ms-keyframes sliders {
+                0% {left:0px;}
+                10% {left:0px;}
+                20% {left:-600px;}
+                30% {left:-600px;}
+                40% {left:-1200px;}
+                50% {left:-1200px;}
+                60% {left:-1800px;}
+                70% {left:-1800px;}
+                80% {left:-2400px;}
+                90% {left:-2400px;}
+            }
+            @keyframes sliders{
+                0% {left:0px;}
+                10% {left:0px;}
+                20% {left:-600px;}
+                30% {left:-600px;}
+                40% {left:-1200px;}
+                50% {left:-1200px;}
+                60% {left:-1800px;}
+                70% {left:-1800px;}
+                80% {left:-2400px;}
+                90% {left:-2400px;}
+            }
+            #div{
+                width: 1300px;
+                height: 350px;
+            }
+            .soru{
+                width: 550px;
+                height: 400px;
+                background-color: white;
+                border-radius: 30px;
+                float: left;
+                margin-left: 50px;
+                opacity: 0.6;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <div class="enbuyukdiv" style="background-image: url(resimler/dene17.jpg);">
+            <div class="tanitim">
+                <div class="tanitim2"></div>
+                <div class="tanitim2"><p style="color:black;">Dünyada Değişmesini İstediğiniz İlk Şey, Kendiniz Olmalıdır.</p></div>
+            </div>
+            <div class="baskisim">
+                <div class="menu">
+                    <ul>
+                        <li><a href="anasayfa.xhtml">ANASAYFA</a></li>
+                        <li><a href="beslenmeYonetimi.xhtml">Beslenme Yönetimi</a></li>
+                        <li><a href="sporYonetimi.xhtml">Spor Yönetimi</a></li>
+                        <li><a href="psikolojiYonetimi.xhtml">Psikoloji Yönetimi</a></li>
+                    </ul>
+                </div>
+                <div class="giris">
+                    <a href="hesabim.xhtml">HESABIM</a> 
+                </div>
+                <div class="giris">
+                    <a href="index.xhtml">ÇIKIŞ YAP</a>
+                </div>
+            </div>
+            <div id="div">
+                <div class="anabolum">
+                    <p>Burada öğretmen yok, öğrenci yok, lider yok, yol gösterici yok, efendi yok, kurtarıcı yok. 
+                        Kendiniz için öğretmensiniz ve öğrencisiniz; efendi, yol gösterici, lider sizsiniz. Siz her şeysiniz! Ve anlamak, değişimdir! Jiddu Krishnamurti</p>
+                </div>
+                <div id="slider-wrapper">
+                    <div class="slider">
+                        <a class="img-bir">
+                            <img src="resimler/slider1.jpg"></img>
+                        </a>
+                        <a class="img-iki">
+                            <img src="resimler/slider2.jpg"></img>
+                        </a>
+                        <a class="img-uc">
+                            <img src="resimler/slider3.jpg"></img>
+                        </a>
+                        <a class="img-dort">
+                            <img src="resimler/slider4.jpg"></img>
+                        </a>
+                        <a class="img-bes">
+                            <img src="resimler/slider5.jpg"></img>
+                        </a>
+                        <a class="img-alti">
+                            <img src="resimler/slider6.jpg"></img>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="div">
+                <div class="soru">
+                    <br></br>
+                    <p style=" color: red; font-size: 30; margin-left: 10px">Yasam Koclugu Nedir?</p>
+                    <p style="margin-left: 5px">Yaşam koçluğuyla ilgili çeşitli tanımlar olmakla birlikte, etkili bir yaşam koçluğu genelde aşağıdaki özellikleri içerir:
+                        Olduğunuz yerden varmak istediğiniz noktaya ulaşmanız için teknikler ve basit stratejiler,
+                        Olumlu olmayan, güçlendirmeyen düşünce kalıplarını ayıklamanız için teknikler,
+                        Pozitif sonuçlar elde etmeniz, geçmişe değil geleceğe odaklanmanız için destek,
+                        Hayatınızı daha anlamlı kılmanız, kendi seçimlerinizi yapmanız için kolay uygulamalar,
+                        Sizi başarıya götürecek gerekli becerileri geliştirmeniz için destek.</p>
+                    <p style=" color: red; font-size: 30; margin-left: 10px">Yaşam Koçluğu Kimler İçindir?</p>
+                    <p style=" margin-left: 5px">Başkalarına hayır diyebiliyorum.
+                        İşten çıktığımda enerji doluyum.
+                        Her gün mutlaka keyif aldığım en az bir şey yaparım.
+                        Hayattan ne beklediğimi çok net bir biçimde biliyorum.
+                        Beni nelerin mutlu ettiğini iyi biliyor ve o konularda adım atıyorum.</p>
+                </div>
+                <div class="soru">
+                    <p style=" color: red; font-size: 30; margin-left: 10px">Yaşam Koçluğu Hangi Durumda Etkilidir?</p>
+                    <p style=" margin-left: 5px">Koçluk, iki durum bir arada olduğunda işe yarar:
+                        Danışanın öğrenmeye, gelişmeye ve adım atmaya istekli olması,
+                        Danışanın hayal ettiği yerden uzakta bulunması durumunda.
+                        Doğru stratejiyi belirleyebileceğiniz, hareket planınızı hayata geçireceğiniz ve hedeflerinize ulaşacağınız başarılı bir koçluk ilişkisi için bunlar yeterlidir.</p>
+                    <p style=" color: red; font-size: 30; margin-left: 10px">Koçluktan En Yüksek Faydayı Nasıl Sağlarsınız?</p>
+                    <p style=" margin-left: 5px">Kendinizi yeniden keşfetmeye hazır olarak
+                        Gerçekten istediğiniz şeye odaklanarak
+                        Koçluk görüşmelerine hazırlanmış gelerek
+                        Kararlaştırdığımız uygulamaları hayata geçirerek
+                    </p>
+                    <p style=" color: red; font-size: 30; margin-left: 10px">Koçluğun Terapi veya Danışmanlıktan Farkı Nedir?</p>
+                    <p style=" margin-left: 5px">Koçluk, geçmişle ilgili derin analizlere giren bir terapi değildir.
+                        Koçluk, daha çok adım atmaya yöneliktir. Bugüne ve geleceğe odaklıdır.
+                        Koçluk, danışana cevapların hazırlanıp verildiği bir danışmanlık da değildir.
+                        Koç ve danışan izlenecek yolu birlikte geliştirirler.</p>
+                </div>
+
+            </div>
+            <div class="son">
+                <div class="logo"><a href=""><img src="resimler/wp.jpg"></img></a></div>
+                <div class="logo"><a href=""><img src="resimler/insta.jpg"></img></a></div>
+                <div class="logo"><a href=""><img src="resimler/twit.jpg"></img></a></div>
+                <div class="logo"><a href=""><img src="resimler/mail.jpg"></img></a></div>
+                <p>İLETİŞİM:</p>
+            </div>
+        </div>
+    </h:body>
+</html>
+
